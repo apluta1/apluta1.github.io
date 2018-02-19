@@ -1,7 +1,7 @@
 let projectId = 1
 let projectUrl = 'https://www.arcgis.com/apps/View/index.html?appid=bda06301dba24bb8b6e77c106a06b290&extent=-181.4062,-71.7006,178.5937,87.0687'
 let projectTitle = 'Map of Recent Earthquakes'
-let projectDesc = 'An ArcGIS Online Web App showing worldwide earthquakes of magnitude 2.5 or greater that have occurred in the last 7 days. The dataset is streamed from the USGS.'
+let projectDesc = 'An ArcGIS Online Web App showing worldwide earthquakes of magnitude 4.5 or greater that have occurred in the last 7 days.'
 let projectThumb = true
 let projectMapExtent = [48.51, -28.37, 2.63, -132.34]
 
