@@ -16,7 +16,7 @@ projectData[1] = {
   url: 'https://www.arcgis.com/apps/View/index.html?appid=bda06301dba24bb8b6e77c106a06b290&extent=-181.4062,-71.7006,178.5937,87.0687',
   title: 'Map of Recent Earthquakes',
   desc: 'An ArcGIS Online Web App showing worldwide earthquakes of magnitude 4.5 or greater that have occurred in the last 7 days.',
-  thumb: false,
+  thumb: true,
   keywords: ['ArcGIS', 'Earthquakes', 'Worldwide']
 }
 
