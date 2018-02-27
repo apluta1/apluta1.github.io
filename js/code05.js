@@ -28,4 +28,9 @@ for (let i = 0; i < projectData.length; i++) {
   } else {
     console.log('images/no-preview.png')
   }
+  if (projectData[i].title === '') {
+    console.log('No title')
+  } else {
+    console.log(projectData[i].title)
+  }
 }
