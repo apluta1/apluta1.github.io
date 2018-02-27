@@ -20,6 +20,32 @@ projectData[1] = {
   keywords: ['ArcGIS', 'Earthquakes', 'Worldwide']
 }
 
+projectData[2] = {
+  id: 3,
+  url: 'https://arcg.is/1aeHWO',
+  title: 'Find Your Professor',
+  desc: 'An ArcGIS Online Web App where you can submit the location of your professor. You can also review all submissions',
+  thumb: true,
+  keywords: ['ArcGIS', 'Baton Rouge', 'LSU', 'Environmental Engineering']
+}
+
+projectData[3] = {
+  id: 4,
+  url: 'https://apluta1.maps.arcgis.com/apps/webappviewer/index.html?id=5f36096953bc48e9943eacf7932f6a72',
+  title: 'New Orleans Restaurants',
+  desc: 'An ArcGIS Online Web App where you can view the location of all the restraunts in New Orleans',
+  thumb: true,
+  keywords: ['ArcGIS', 'New Orleans', 'Restaurants']
+}
+
+projectData[4] = {
+  id: 5,
+  url: 'https://apluta1.maps.arcgis.com/apps/webappviewer/index.html?id=8c5680d4b8c54defae5d4429039d0ebc',
+  title: 'USA Population Growth',
+  desc: 'An ArcGIS Online Web App, where you can view popuation growth, in the USA, from 1789 to 2009',
+  thumb: true,
+  keywords: ['ArcGIS', 'USA', 'Population']
+}
 
 for (let i = 0; i < projectData.length; i++) {
   console.log('Index position ' + i + ' title: ' + projectData[i].title)
