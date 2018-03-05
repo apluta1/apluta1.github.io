@@ -51,9 +51,9 @@ projectData[5] = {
   id: 6,
   url: 'https://arcg.is/1K9j91',
   title: 'Areas of Interest in New Orleans ',
-  desc: 'An ArcGIS Online Web App, where you can view the locations of Restraunts, Hotels, Live Entertainment, and Bars in New Orleans',
+  desc: 'An ArcGIS Online Web App, where you can view the locations of Restaurants, Hotels, Live Entertainment, and Bars in New Orleans',
   thumb: true,
-  keywords: ['ArcGIS', 'New Orleans', 'Bars', 'Hotels', 'Entertainment', 'Restraunts']
+  keywords: ['ArcGIS', 'New Orleans', 'Bars', 'Hotels', 'Entertainment', 'Restaurants']
 }
 
 for (let i = 0; i < projectData.length; i++) {
