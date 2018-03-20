@@ -57,6 +57,6 @@ for (let i = 0; i < projectData.length; i++) {
 }
 
 function createTitle (title) {
-  console .log('Index position ' + i + 'title' + title)
+  console .log('Title' + title)
 }
 function createThumbnail () {}
