@@ -48,21 +48,15 @@ projectData[4] = {
 }
 
 for (let i = 0; i < projectData.length; i++) {
-  createTitle ()
-  console.log('Index position ' + i + ' title: ' + projectData[i].title)
+  createTitle (projectData[i].title)
   if (projectData[i].thumb === true) {
     console.log('images/ss-project-' + projectData[i].id + '.png')
   } else {
     console.log('images/no-preview.png')
   }
-  if (projectData[i].title === '') {
-    console.log('No title')
-  } else {
-    console.log(projectData[i].title)
-  }
 }
 
-function createTitle () {
-  console .log('Index position ' + i + 'title' + projectData[i].title)
+function createTitle (title) {
+  console .log('Index position ' + i + 'title' + title)
 }
 function createThumbnail () {}
