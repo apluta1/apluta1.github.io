@@ -53,7 +53,7 @@ for (let i = 0; i < projectData.length; i++) {
 }
 
 function createTitle (title) {
-  console .log('Title' + title)
+  console .log('Title: ' + title)
 }
 function createThumbnail (thumb, id) {
   if ( thumb === true) {
