@@ -47,6 +47,15 @@ projectData[4] = {
   keywords: ['ArcGIS', 'USA', 'Population']
 }
 
+projectData[5] = {
+  id: 6,
+  url: 'https://arcg.is/1K9j91',
+  title: 'Areas of Interest in New Orleans ',
+  desc: 'An ArcGIS Online Web App, where you can view the locations of Restaurants, Hotels, Live Entertainment, and Bars in New Orleans',
+  thumb: true,
+  keywords: ['ArcGIS', 'New Orleans', 'Bars', 'Hotels', 'Entertainment', 'Restaurants']
+}
+
 for (let i = 0; i < projectData.length; i++) {
   console.log('Index position ' + i + ' title: ' + projectData[i].title)
   if (projectData[i].thumb === true) {
