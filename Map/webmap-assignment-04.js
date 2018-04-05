@@ -1,6 +1,6 @@
-let mymap = L.map('map4').setView([38, -98], 4)
+let mymap = L.map('AlexMap').setView([38, -98], 4)
 basemapUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'
-L.titleLayer(basemapUrl).addTo(mymap)
+L.titleLayer(basemapUrl).addTo(AlexMap)
 
 myGeojsonStyle = function (state) {
   LETAGE = state.properties.MED_AGE
