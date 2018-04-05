@@ -1,6 +1,6 @@
 let superdupermap = L.map('AlexMap').setView([38, -98], 4)
 dupermap = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png'
-L.titleLayer(dupermap).addTo(superdupermap)
+L.tileLayer(dupermap).addTo(superdupermap)
 
 myGeojsonStyle = function (state) {
   LETAGE = state.properties.MED_AGE
@@ -15,10 +15,10 @@ myGeojsonStyle = function (state) {
 function createPopup (state, statelayer){
   let name = state.properties.STATE_NAME
   let age = state.properties.MED_AGE
-  statelayer.bindPopup('Median age of' + name :':' + age + '<br>National average:38')
+  statelayer.bindPopup('Median age of' + name + ':' + age + '<br>National average:38')
 }
 myGeojsonOptions = {
-  stle: myGeojsonStyle
+  stle: myGeojsonStyle,
   onEachFeature: createPopup
 }
 L.geoJSON(stateDemographics, myGeojsonOptions).addTo(superdupermap)
