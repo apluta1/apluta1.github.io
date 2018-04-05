@@ -1,6 +1,6 @@
-let mymap = L.map('AlexMap').setView([38, -98], 4)
-basemapUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'
-L.titleLayer(basemapUrl).addTo(AlexMap)
+let superdupermap = L.map('AlexMap').setView([38, -98], 4)
+dupermap = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'
+L.titleLayer(dupermap).addTo(superdupermap)
 
 myGeojsonStyle = function (state) {
   LETAGE = state.properties.MED_AGE
@@ -21,4 +21,4 @@ myGeojsonOptions = {
   stle: myGeojsonStyle
   onEachFeature: createPopup
 }
-L.geoJSON(stateDemographics, myGeojsonOptions).addTo(mymap)
+L.geoJSON(stateDemographics, myGeojsonOptions).addTo(superdupermap)
