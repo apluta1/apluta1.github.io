@@ -1,5 +1,5 @@
 let superdupermap = L.map('AlexMap').setView([38, -98], 4)
-dupermap = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'
+dupermap = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png'
 L.titleLayer(dupermap).addTo(superdupermap)
 
 myGeojsonStyle = function (state) {
