@@ -15,7 +15,7 @@ let duperBasemaps = {
 geoJSONstyle = function (states) {
   let age = states.properties.MED_AGE
   let statecolor = 'Blue'
-  if ( age < 38 ) {statecolor = 'Green'}
+  if ( age < 38 ) {statecolor = 'Red'}
   let Style = {
     color: statecolor,
     weight: 2,
