@@ -36,6 +36,6 @@ geoJSONoptions = {
   style: geoJSONstyle,
   onEachFeature: createPopup
 }
-L.geoJSON(statedata, geoJSONoptions).addTo(superdupermap)
+L.geoJSON(stateDemographics, geoJSONoptions).addTo(superdupermap)
 
 L.control.layers(duperBasemaps).addTo(superdupermap)
