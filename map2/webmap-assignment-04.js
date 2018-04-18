@@ -1,24 +1,30 @@
-let superdupermap = L.map('AlexMap').setView([38, -98], 4)
-dupermap = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png'
-L.tileLayer(dupermap).addTo(superdupermap)
+let superdupermap = L.map('AlexMap').setView([38.61057,	-97.133041], 4)
 
-myGeojsonStyle = function (state) {
-  LETAGE = state.properties.MED_AGE
-  let stateColor = 'Olive'
-  if (age < 38) { stateColor = 'Green'}
-  let myStyle = {
-    color: stateColor,
-    weight: 1,
+L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(superdupermap)
+
+
+mygeoJSONstyle = function (states) {
+  let age = states.properties.MED_AGE
+  let statecolor = 'Blue'
+  if ( age < 38 ) {statecolor = 'Green'}
+  let Style = {
+    color: statecolor,
+    weight: 2,
+    fillOpacity: 0.2,
+    opacity: 0.3,
   }
-  return myStyle
+  return Style
 }
-function createPopup (state, statelayer){
-  let name = state.properties.STATE_NAME
-  let age = state.properties.MED_AGE
-  statelayer.bindPopup('Median age of' + name + ':' + age + '<br>National average:38')
+
+function createPopup (states, statelayer) {
+  let population = states.properties.POPULATION
+  let name = states.properties.STATE_NAME
+  let age = states.properties.MED_AGE
+  statelayer.bindPopup('Population of ' + name + ':' + population + '<br>Median age ' + ': ' + age + '<br>National average: 38')
 }
-myGeojsonOptions = {
-  stle: myGeojsonStyle,
+
+mygeoJSONoptions = {
+  style: geoJSONstyle,
   onEachFeature: createPopup
 }
 L.geoJSON(stateDemographics, myGeojsonOptions).addTo(superdupermap)
