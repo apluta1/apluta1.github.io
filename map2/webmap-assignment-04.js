@@ -1,4 +1,4 @@
-let superdupermap = L.map('AlexMap').setView([38.61057,	-97.133041], 4)
+let superdupermap = L.map('AlexMap').setView([[29.9637528, -90.058966], 13)
 
 L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(superdupermap)
 

@@ -1,6 +1,6 @@
 let superdupermap = L.map('AlexMap').setView([29.951105, -90.081227], 13)
 
-L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(theworld)
+L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(superdupermap)
 
 let icon = L.icon({
   iconUrl: 'thumbtack.png',
@@ -9,7 +9,7 @@ let icon = L.icon({
   popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
 })
 
-let mymarker = L.marker([29.951105, -90.081227], {icon: myredpin}).addTo(theworld);
+let mymarker = L.marker([29.951105, -90.081227], {icon: myredpin}).addTo(superdupermap);
 
 let mypolystyle = {
   color: 'yellow',
