@@ -1,4 +1,4 @@
-let superdupermap = L.map('AlexMap').setView([[29.9637528, -90.058966]], 13)
+let superdupermap = L.map('AlexMap').setView([29.9637528, -90.058966], 13)
 
 let dupermap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png').addTo(superdupermap)
 
