@@ -11,13 +11,13 @@ let mymap = L.map('GimmeTheLoot', mapOptions)
 let imageDimensions = [[0, 0], [1686, 3000]]
 L.imageOverlay('OriginsBasemap.jpg', imageDimensions).addTo(mymap)
 
-let mystyle = {
+let Siwastyle = {
   color: 'yellow',
   fillColor: 'red',
   fillOpacity: 0.4
 }
 
-let mycoordinates = [
+let Siwacoordinates = [
   [1017, 1102.5],
   [854.5, 1085.5],
   [864.5, 1121],
@@ -39,9 +39,9 @@ let mycoordinates = [
   [967.5, 1177]
 ]
 
-let myPolygon = L.polygon(mycoordinates, mystyle).addTo(mymap)
+let SiwaPolygon = L.polygon(Siwacoordinates, Siwastyle).addTo(mymap)
 
-myPolygon.bindPopup('Siwa')
+SiwaPolygon.bindPopup('<center>SIWA<br></center>' + '<br><space>Siwa is the starting province. Here, you can complete the first few missions that will allow you to reach other locations.<br>' + '<br>Suggested level: 1-5' + '<br>Enemy Fortifications: 2' + '<br>Treasures: 10' + '<br>Hunting Locations: 3' + '<br>Synchronization Points: 3' + '<br>Stone Circles: 1' + '<br>Tombs: Mountain of the Dead Tomb' + '<br>Papyrus Mystery: A Long Drink')
 
 function onMapClick(e) {
     console.log(e.latlng);
