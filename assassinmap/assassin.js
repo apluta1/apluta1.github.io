@@ -1,7 +1,7 @@
 let mapOptions = {
   center: [1500, 843],
-  zoom: -2,
-  minZoom: -2,
+  zoom: -1,
+  minZoom: -1,
   maxZoom: 1,
   crs: L.CRS.Simple,
   maxBoundsViscosity: 1.0

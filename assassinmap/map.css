@@ -1,1 +1,6 @@
-#GimmeTheLoot { height: 400px }
+html, body, #GimmeTheLoot {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding:0
+}
